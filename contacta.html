@@ -2,92 +2,100 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Contacto - Blog de Programación</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog de Programación</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            background-color: #f8f9fa;
-        }
-
-        .main-content {
-            padding: 20px;
-        }
-
-        .contact-form {
-            background-color: #ffffff;
-            padding: 20px;
-            border-radius: 10px;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
 <!-- Barra de navegación -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="index.html">Blog de Programación</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <a class="navbar-brand" href="index.html">Inicio</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ml-auto">
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
             <li class="nav-item">
-                <a class="nav-link" href="index.html">Home</a>
+                <a class="nav-link" href="xml.html">XML</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="Investigación sobre XML.pdf">XML</a>
+                <a class="nav-link" href="json.html">JSON</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="Investigación sobre JSON.pdf">JSON</a>
-            </li>
-            <li class="nav-item active">
                 <a class="nav-link" href="contacta.html">Contacto</a>
             </li>
         </ul>
     </div>
 </nav>
 
-<!-- Contenido principal -->
-<div class="container mt-4">
+<div class="container-fluid">
     <div class="row">
-        <!-- Columna principal -->
-        <div class="col-lg-8 main-content">
-            <!-- Formulario de contacto -->
-            <div class="contact-form">
-                <h2>Contacto</h2>
-                <form>
-                    <div class="form-group">
-                        <label for="nombre">Nombre:</label>
-                        <input type="text" class="form-control" id="nombre" placeholder="Ingrese su nombre">
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Correo electrónico:</label>
-                        <input type="email" class="form-control" id="email" placeholder="Ingrese su correo electrónico">
-                    </div>
-                    <div class="form-group">
-                        <label for="mensaje">Mensaje:</label>
-                        <textarea class="form-control" id="mensaje" rows="4" placeholder="Escriba su mensaje"></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Enviar mensaje</button>
-                </form>
+
+        <!-- Columna Categorías -->
+        <div class="col-lg-3 col-md-4">
+            <div class="sidebar">
+                <h2><b>Categorías</b></h2>
+                <ul>
+                    <li> <a href="xml.html">XML</a></li>
+                    <li> <a href="json.html">JSON</a></li>
+                    <li> <a href="contacta.html">Contacto</a></li>
+                </ul>
+
+                <h2><b>Últimos Posts</b></h2>
+                <ul>
+                    <li> <a href="Investigación sobre XML.pdf">Acerca de XML</a></li>
+                    <li> <a href="Investigación sobre JSON.pdf">Acerca de JSON</a></li>
+                </ul>
+
+                
+                <h2><b>Anuncio Destacado</b></h2>
+                <ul>
+                    <img src="publicidad.jpg" alt="Publicidad Destacada" height="500">
+                </ul>
+
+                <h2><b>Síguenos en Redes Sociales</b></h2>
+                <ul class="social-icons">
+                    <li><a href="https://www.facebook.com/campusfp/"><img src="facebook.png" alt="Facebook"></a></li>
+                    <li><a href="https://twitter.com/Campus_FP"><img src="twitter.png" alt="X"></a></li>
+                    <li><a href="https://www.instagram.com/campusfp_/"><img src="instagram.png" alt="Instagram"></a></li>
+                </ul>
             </div>
         </div>
 
-        <!-- Barra lateral -->
-        <div class="col-lg-4">
-            <div class="sidebar">
-                <!-- Contenido de la barra lateral -->
+        <!-- Contenido principal -->
+        <div class="col-lg-9 col-md-12">
+            <div class="content">
+            <!-- Columna principal -->
+            <div class="col-lg-8 main-content">
+                <!-- Formulario de contacto -->
+                <div class="contact-form">
+                    <h2>Contacto</h2>
+                    <form>
+                        <div class="form-group">
+                            <label for="nombre">Nombre:</label>
+                            <input type="text" class="form-control" id="nombre" placeholder="Ingrese su nombre">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Correo electrónico:</label>
+                            <input type="email" class="form-control" id="email" placeholder="Ingrese su correo electrónico">
+                        </div>
+                        <div class="form-group">
+                            <label for="mensaje">Mensaje:</label>
+                            <textarea class="form-control" id="mensaje" rows="4" placeholder="Escriba su mensaje"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enviar mensaje</button>
+                    </form>
+                </div>
             </div>
-        </div>
+
     </div>
 </div>
 
-<!-- Enlaces a los scripts de Bootstrap -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
 </body>
 </html>
-
